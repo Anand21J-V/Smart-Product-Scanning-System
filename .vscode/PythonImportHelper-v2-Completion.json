@@ -1,0 +1,484 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "google.generativeai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "google.generativeai",
+        "description": "google.generativeai",
+        "detail": "google.generativeai",
+        "documentation": {}
+    },
+    {
+        "label": "pymysql",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pymysql",
+        "description": "pymysql",
+        "detail": "pymysql",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "class Product(BaseModel):\n    name: str\n    brand: str\n    product_type: str\n    size: str\n    expiry: str\n    price: str\n    sku: str\n# Database table creation\ndef setup_mysql():",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "setup_mysql",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def setup_mysql():\n    conn = pymysql.connect(\n        host=DB_CONFIG[\"host\"],\n        user=DB_CONFIG[\"user\"],\n        password=DB_CONFIG[\"password\"]\n    )\n    with conn.cursor() as cursor:\n        cursor.execute(f\"CREATE DATABASE IF NOT EXISTS {DB_CONFIG['database']}\")\n    conn.commit()\n    conn.close()",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_db_connection",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def get_db_connection():\n    conn = pymysql.connect(**DB_CONFIG)\n    return conn\n# SQLite connection\ndef get_connection():\n    return sqlite3.connect(\"products.db\")\n# Fetch product data from SQLite\ndef fetch_product_data():\n    conn = get_connection()\n    conn.row_factory = sqlite3.Row",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def get_connection():\n    return sqlite3.connect(\"products.db\")\n# Fetch product data from SQLite\ndef fetch_product_data():\n    conn = get_connection()\n    conn.row_factory = sqlite3.Row\n    cursor = conn.cursor()\n    cursor.execute(\"SELECT time, name, product_type, price FROM PRODUCTS\")\n    rows = cursor.fetchall()\n    conn.close()",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_product_data",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def fetch_product_data():\n    conn = get_connection()\n    conn.row_factory = sqlite3.Row\n    cursor = conn.cursor()\n    cursor.execute(\"SELECT time, name, product_type, price FROM PRODUCTS\")\n    rows = cursor.fetchall()\n    conn.close()\n    return [dict(row) for row in rows]\n# Generate seasonal/festival alert using Gemini\ndef generate_alert(products):",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_alert",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def generate_alert(products):\n    product_info = \"\\n\".join([\n        f\"{p['time']} - {p['name']} ({p['product_type']}): ₹{p['price']}\" \n        for p in products\n    ])\n    prompt = f\"\"\"\n    Only include product names that make sense for the upcoming season or festival. Use simple and natural English. Avoid any special formatting like asterisks or slashes.\n    Also tell how much the demand of the product will hike.\n    Data:\n    {product_info}",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "extract_info_from_image",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def extract_info_from_image(pil_image):\n    try:\n        response = model.generate_content(\n            [\n                \"Extract product details and return ONLY a JSON object with keys: name, brand, product_type, size, expiry, price, sku.\",\n                pil_image\n            ],\n            generation_config={\"temperature\": 0.3, \"top_p\": 1, \"top_k\": 40, \"max_output_tokens\": 512},\n            safety_settings={\"HARASSMENT\": \"block_none\", \"HATE\": \"block_none\", \"SEXUAL\": \"block_none\", \"DANGEROUS\": \"block_none\"},\n        )",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "insert_into_database",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def insert_into_database(data):\n    try:\n        conn = get_db_connection()\n        cursor = conn.cursor()\n        query = \"\"\"\n        INSERT INTO products (name, price, sku, expiry, brand, product_type, size)\n        VALUES (%s, %s, %s, %s, %s, %s, %s)\n        \"\"\"\n        values = (\n            data[\"name\"],",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "capture_image_and_extract",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def capture_image_and_extract():\n    cap = cv2.VideoCapture(0)\n    if not cap.isOpened():\n        raise HTTPException(status_code=500, detail=\"Failed to open camera\")\n    ret, frame = cap.read()\n    cap.release()\n    if not ret:\n        raise HTTPException(status_code=500, detail=\"Failed to capture image\")\n    pil_image = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))\n    result = extract_info_from_image(pil_image)",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_Connection",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def get_Connection():\n    try:\n        print(\"Hello\")\n        return {\"msg\": \"Hello\"}\n    except Exception as e:\n        print(\"Error fetching product history:\", e)\n        raise HTTPException(status_code=500, detail=f\"Failed to retrieve product history: {str(e)}\")\n# Product History Endpoint\n@app.get(\"/product-history\")\ndef get_product_history():",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_product_history",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def get_product_history():\n    try:\n        print(\"product\")\n        conn = get_db_connection()\n        cursor = conn.cursor()\n        cursor.execute(f\"SELECT * FROM {TABLE_NAME} ORDER BY id DESC\")\n        rows = cursor.fetchall()\n        cursor.close()\n        conn.close()\n        keys = [\"id\", \"name\", \"brand\", \"product_type\", \"size\", \"expiry\", \"price\", \"sku\"]",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "startup_event",
+        "kind": 2,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "def startup_event():\n    setup_mysql()\n# Host and port setup\nif __name__ == \"__main__\":\n    import uvicorn\n    uvicorn.run(app, host=\"0.0.0.0\", port=5000)",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "model = genai.GenerativeModel(\"gemini-2.0-flash\")\n# Database Configuration\nDB_CONFIG = {\n    \"host\": \"localhost\",\n    \"user\": \"root\",\n    \"password\": \"ritik@01A\",  # Ensure this is correct\n    \"database\": \"scanner\"\n}\nTABLE_NAME = \"products\"\n# FastAPI app init",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "DB_CONFIG",
+        "kind": 5,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "DB_CONFIG = {\n    \"host\": \"localhost\",\n    \"user\": \"root\",\n    \"password\": \"ritik@01A\",  # Ensure this is correct\n    \"database\": \"scanner\"\n}\nTABLE_NAME = \"products\"\n# FastAPI app init\napp = FastAPI()\n# CORS setup",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "TABLE_NAME",
+        "kind": 5,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "TABLE_NAME = \"products\"\n# FastAPI app init\napp = FastAPI()\n# CORS setup\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],  # Update with frontend URL\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Backend.main",
+        "description": "Backend.main",
+        "peekOfCode": "app = FastAPI()\n# CORS setup\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],  # Update with frontend URL\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n# Pydantic model",
+        "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "sales_performance_plot",
+        "kind": 2,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "def sales_performance_plot():\n    df_copy = df.copy()\n    df_copy.set_index('Time', inplace=True)\n    fig, ax = plt.subplots(figsize=(12, 5))\n    fig.set_facecolor('#f7f7f7')\n    df_copy['Total Price'].plot(ax=ax, label='Total Sales', marker='o', linewidth=2)\n    df_copy['Total Price'].rolling(window=12).mean().plot(ax=ax, label='12-Hour Moving Avg', linestyle='--', color='orange')\n    ax.set_title('📈 Total Sales Over Time', fontsize=14)\n    ax.set_xlabel('Time')\n    ax.set_ylabel('Total Sales')",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "generate_plot",
+        "kind": 2,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "def generate_plot(plot_func):\n    fig = plot_func()\n    img = io.BytesIO()\n    fig.savefig(img, format='png')\n    img.seek(0)\n    plt.close(fig)\n    return img\n@app.route(\"/\")\ndef hello():\n    return \"Flask is running!\"",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 2,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "def hello():\n    return \"Flask is running!\"\n# API endpoint\n@app.route(\"/sales_performance\", methods=[\"POST\"])\ndef sales_performance():\n    try:\n        print(\"kkk\")\n        img = generate_plot(sales_performance_plot)\n        return send_file(img, mimetype='image/png')\n    except Exception as e:",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "sales_performance",
+        "kind": 2,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "def sales_performance():\n    try:\n        print(\"kkk\")\n        img = generate_plot(sales_performance_plot)\n        return send_file(img, mimetype='image/png')\n    except Exception as e:\n        return jsonify({'error': str(e)}), 500\n# Run the app\nif __name__ == \"__main__\":\n    app.run(host=\"0.0.0.0\",port=5001,debug=True)",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)  # <-- Enable CORS for all routes\n# Define visually appealing synthetic data\nn_rows = 500\nproducts = ['coke', 'biscuit', 'cream', 'cake', 'cosmetic Product']\noccasions = ['None', 'Christmas', 'Holi', 'Diwali', 'Navratri']\n# Create a trend in sales to make the graph visually interesting\ntime_index = pd.date_range('2023-01-01', periods=n_rows, freq='H')\ntrend = np.linspace(50, 500, n_rows)  # Gradual sales increase\nseasonal = 50 * np.sin(np.linspace(0, 3 * np.pi, n_rows))  # Seasonal fluctuations",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "n_rows",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "n_rows = 500\nproducts = ['coke', 'biscuit', 'cream', 'cake', 'cosmetic Product']\noccasions = ['None', 'Christmas', 'Holi', 'Diwali', 'Navratri']\n# Create a trend in sales to make the graph visually interesting\ntime_index = pd.date_range('2023-01-01', periods=n_rows, freq='H')\ntrend = np.linspace(50, 500, n_rows)  # Gradual sales increase\nseasonal = 50 * np.sin(np.linspace(0, 3 * np.pi, n_rows))  # Seasonal fluctuations\nrandom_noise = np.random.randint(-20, 20, n_rows)\nbase_units = trend + seasonal + random_noise\nbase_units = np.clip(base_units, a_min=10, a_max=None).astype(int)",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "products = ['coke', 'biscuit', 'cream', 'cake', 'cosmetic Product']\noccasions = ['None', 'Christmas', 'Holi', 'Diwali', 'Navratri']\n# Create a trend in sales to make the graph visually interesting\ntime_index = pd.date_range('2023-01-01', periods=n_rows, freq='H')\ntrend = np.linspace(50, 500, n_rows)  # Gradual sales increase\nseasonal = 50 * np.sin(np.linspace(0, 3 * np.pi, n_rows))  # Seasonal fluctuations\nrandom_noise = np.random.randint(-20, 20, n_rows)\nbase_units = trend + seasonal + random_noise\nbase_units = np.clip(base_units, a_min=10, a_max=None).astype(int)\ndata = {",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "occasions",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "occasions = ['None', 'Christmas', 'Holi', 'Diwali', 'Navratri']\n# Create a trend in sales to make the graph visually interesting\ntime_index = pd.date_range('2023-01-01', periods=n_rows, freq='H')\ntrend = np.linspace(50, 500, n_rows)  # Gradual sales increase\nseasonal = 50 * np.sin(np.linspace(0, 3 * np.pi, n_rows))  # Seasonal fluctuations\nrandom_noise = np.random.randint(-20, 20, n_rows)\nbase_units = trend + seasonal + random_noise\nbase_units = np.clip(base_units, a_min=10, a_max=None).astype(int)\ndata = {\n    'Time': time_index,",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "time_index",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "time_index = pd.date_range('2023-01-01', periods=n_rows, freq='H')\ntrend = np.linspace(50, 500, n_rows)  # Gradual sales increase\nseasonal = 50 * np.sin(np.linspace(0, 3 * np.pi, n_rows))  # Seasonal fluctuations\nrandom_noise = np.random.randint(-20, 20, n_rows)\nbase_units = trend + seasonal + random_noise\nbase_units = np.clip(base_units, a_min=10, a_max=None).astype(int)\ndata = {\n    'Time': time_index,\n    'Price': np.random.choice([50, 60, 70, 80, 90, 100], n_rows),\n    'Units Sold': base_units,",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "trend",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "trend = np.linspace(50, 500, n_rows)  # Gradual sales increase\nseasonal = 50 * np.sin(np.linspace(0, 3 * np.pi, n_rows))  # Seasonal fluctuations\nrandom_noise = np.random.randint(-20, 20, n_rows)\nbase_units = trend + seasonal + random_noise\nbase_units = np.clip(base_units, a_min=10, a_max=None).astype(int)\ndata = {\n    'Time': time_index,\n    'Price': np.random.choice([50, 60, 70, 80, 90, 100], n_rows),\n    'Units Sold': base_units,\n}",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "seasonal",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "seasonal = 50 * np.sin(np.linspace(0, 3 * np.pi, n_rows))  # Seasonal fluctuations\nrandom_noise = np.random.randint(-20, 20, n_rows)\nbase_units = trend + seasonal + random_noise\nbase_units = np.clip(base_units, a_min=10, a_max=None).astype(int)\ndata = {\n    'Time': time_index,\n    'Price': np.random.choice([50, 60, 70, 80, 90, 100], n_rows),\n    'Units Sold': base_units,\n}\ndf = pd.DataFrame(data)",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "random_noise",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "random_noise = np.random.randint(-20, 20, n_rows)\nbase_units = trend + seasonal + random_noise\nbase_units = np.clip(base_units, a_min=10, a_max=None).astype(int)\ndata = {\n    'Time': time_index,\n    'Price': np.random.choice([50, 60, 70, 80, 90, 100], n_rows),\n    'Units Sold': base_units,\n}\ndf = pd.DataFrame(data)\ndf['Total Price'] = df['Price'] * df['Units Sold']",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "base_units",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "base_units = trend + seasonal + random_noise\nbase_units = np.clip(base_units, a_min=10, a_max=None).astype(int)\ndata = {\n    'Time': time_index,\n    'Price': np.random.choice([50, 60, 70, 80, 90, 100], n_rows),\n    'Units Sold': base_units,\n}\ndf = pd.DataFrame(data)\ndf['Total Price'] = df['Price'] * df['Units Sold']\n# Function to generate sales performance over time plot",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "base_units",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "base_units = np.clip(base_units, a_min=10, a_max=None).astype(int)\ndata = {\n    'Time': time_index,\n    'Price': np.random.choice([50, 60, 70, 80, 90, 100], n_rows),\n    'Units Sold': base_units,\n}\ndf = pd.DataFrame(data)\ndf['Total Price'] = df['Price'] * df['Units Sold']\n# Function to generate sales performance over time plot\ndef sales_performance_plot():",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "data = {\n    'Time': time_index,\n    'Price': np.random.choice([50, 60, 70, 80, 90, 100], n_rows),\n    'Units Sold': base_units,\n}\ndf = pd.DataFrame(data)\ndf['Total Price'] = df['Price'] * df['Units Sold']\n# Function to generate sales performance over time plot\ndef sales_performance_plot():\n    df_copy = df.copy()",
+        "detail": "innovation.sales",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "innovation.sales",
+        "description": "innovation.sales",
+        "peekOfCode": "df = pd.DataFrame(data)\ndf['Total Price'] = df['Price'] * df['Units Sold']\n# Function to generate sales performance over time plot\ndef sales_performance_plot():\n    df_copy = df.copy()\n    df_copy.set_index('Time', inplace=True)\n    fig, ax = plt.subplots(figsize=(12, 5))\n    fig.set_facecolor('#f7f7f7')\n    df_copy['Total Price'].plot(ax=ax, label='Total Sales', marker='o', linewidth=2)\n    df_copy['Total Price'].rolling(window=12).mean().plot(ax=ax, label='12-Hour Moving Avg', linestyle='--', color='orange')",
+        "detail": "innovation.sales",
+        "documentation": {}
+    }
+]
